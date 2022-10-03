@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+    <header>
+        <h1>BOOKSHELF APPS</h1>
+    </header>
+    <main>
+        <div class="left">
+            <p id="id_user"></p>
+            <h3>INPUT&EDIT BUKU</h3>
+            <form action="">
+                <label for="">Nama Judul</label>
+                <input type="text" id="title" placeholder="Masukkan nama judul...">
+                <label for="">Nama Pengarang</label>
+                <input type="text" id="author" placeholder="Masukkan nama pengarang...">
+                <label for="">Tahun</label>
+                <input type="number" id="year" placeholder="Masukkan tahun...">
+                <label for="">Status Baca</label>
+                <select id="status" name="cars">
+                    <option value="1">True</option>
+                    <option value="0">False</option>
+                </select>
+                <input type="submit" onclick="save()" class="btn-save">
+            </form>
+        </div>
+        <div class="right">
+            <input type="search" id="search" name="search" placeholder="Cari Buku...">
+            <div class="undone">
+            </div>
+            <div class="done">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

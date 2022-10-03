@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(232, 232, 232);
+}
+header,footer {
+    background-color: aqua;
+    box-shadow: 0px 0px 4px 4px rgba(52, 52, 52,0.2);
+}
+header,footer h1{   
+    padding: 50px;
+    text-align: center;
+}
+main{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+main .left {
+    flex: 3;
+    margin: 25px;
+    padding: 35px;
+    box-shadow: 0px 0px 4px 4px rgba(52, 52, 52,0.2);
+    background-color: white;
+    height: 420px;
+}
+main .left > h3 {
+    text-align: center;
+}main .left select {    
+    padding: 5px;
+    width: 100%;
+}
+main .left input,select {    
+    padding: 5px ;
+    width: 50%;
+    border: none;
+    border-bottom: solid aqua;
+}
+main .left input,select:focus{
+    outline: none;
+}
+main .left .btn-save{
+    padding: 10px;
+    background-color: aqua;
+    border: none;
+    border-radius: 15px;
+}
+main .left #save:active{
+    background-color: rgb(4, 231, 231);
+}
+main .left label,input,select{
+    display: block;
+    margin: 10px 0;
+}
+main .right{
+    flex: 3;
+    margin: 12px 25px;
+}
+main .right #search {
+    border: 2px solid aqua;
+    box-shadow: 0px 0px 4px 4px rgba(52, 52, 52,0.2);
+    padding: 10px;
+    /* width: 100%; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+main .right #search:focus{
+    outline: none;
+}
+main .right .done {  
+    box-shadow: 0px 0px 4px 4px rgba(52, 52, 52,0.2);
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+main .right .done > h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+main .right .undone > h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+main .right .undone {  
+    box-shadow: 0px 0px 4px 4px rgba(52, 52, 52,0.2);
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+main .card-data{
+    display: flex;
+    border: solid aqua;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+main .card-data .content{
+    flex: 1.8;
+}
+main .card-data .btn{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .card-data .btn .btn-delete{
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+main .card-data .btn .btn-edit{
+    background-color: rgb(231, 231, 3);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+main .card-data .btn .btn-done{
+    background-color: rgb(0, 167, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+main .card-data .btn .btn-undone{
+    background-color: rgb(255, 0, 191);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 668px) {
+    main {
+        flex-direction: column;
+    }
+    .card-data {
+        flex-direction: column;
+    }
+    .card-data p{
+        font-size: 18px;
+    }
+    .card-data .btn {
+        margin-top: 5px;
+    }
+    .card-data .btn button{
+        font-size: 16px;
+    }
+    main .card-data .btn .btn-delete{
+        padding: 6px 18px;
+        border-radius: 5px;
+    }
+    main .card-data .btn .btn-edit{
+        padding: 6px 18px;
+        border-radius: 5px;
+    }
+    main .card-data .btn .btn-done{
+        padding: 6px 18px;
+        border-radius: 5px;
+    }
+    main .card-data .btn .btn-undone{
+        padding: 6px 18px;
+        border-radius: 5px;
+    }
+} 
+@media only screen and (max-width: 500px) {
+    main {
+        flex-direction: column;
+    }
+    .card-data {
+        flex-direction: column;
+    }
+    .card-data p{
+        font-size: 14px;
+    }
+    .card-data .btn {
+        margin-top: 5px;
+    }
+    .card-data .btn button{
+        font-size: 12px;
+    }
+    main .card-data .btn .btn-delete{
+        padding: 6px 18px;
+        border-radius: 5px;
+    }
+    main .card-data .btn .btn-edit{
+        padding: 6px 18px;
+        border-radius: 5px;
+    }
+    main .card-data .btn .btn-done{
+        padding: 6px 18px;
+        border-radius: 5px;
+    }
+    main .card-data .btn .btn-undone{
+        padding: 6px 18px;
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    main {
+        flex-direction: column;
+    }
+    .card-data {
+        flex-direction: column;
+    }
+    .card-data p{
+        font-size: 12px;
+    }
+    .card-data .btn {
+        margin-top: 5px;
+    }
+    .card-data .btn button{
+        font-size: 10px;
+    }
+    main .card-data .btn .btn-delete{
+        padding: 6px 18px;
+    }
+    main .card-data .btn .btn-edit{
+        padding: 6px 18px;
+    }
+    main .card-data .btn .btn-done{
+        padding: 6px 18px;
+    }
+    main .card-data .btn .btn-undone{
+        padding: 8px 5px;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .example {background: orange;}
+} 
+@media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+}
