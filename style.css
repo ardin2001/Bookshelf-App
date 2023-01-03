@@ -33,11 +33,14 @@ main .left > h3 {
     padding: 5px;
     width: 100%;
 }
-main .left input,select {    
+main .left input,select{    
     padding: 5px ;
     width: 50%;
     border: none;
     border-bottom: solid aqua;
+}
+#status{
+    width: 50%;
 }
 main .left input,select:focus{
     outline: none;
@@ -63,7 +66,7 @@ main .right #search {
     border: 2px solid aqua;
     box-shadow: 0px 0px 4px 4px rgba(52, 52, 52,0.2);
     padding: 10px;
-    /* width: 100%; */
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
